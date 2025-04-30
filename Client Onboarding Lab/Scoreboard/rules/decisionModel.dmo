@@ -52,6 +52,7 @@
                 <input bomType="ClientInformation" collection="false" name="Client"/>
                 <input bomType="Industry" collection="false" name="Industry"/>
                 <output bomType="Scoreboard" collection="false" name="Predictive risk"/>
+                <rule defaultRule="false" href="node_7/predictive%20risk.drl" kind="BusinessRule" name="predictive risk"/>
             </ruleset>
         </extensionElements>
         <variable id="node_7_ii" name="Predictive risk" typeRef="Scoreboard"/>
@@ -73,25 +74,27 @@
         </extensionElements>
         <variable id="node_8_ii" name="Industry" typeRef="Industry"/>
     </inputData>
-    <businessKnowledgeModel id="node_9" name="Prediction 9">
+    <businessKnowledgeModel id="node_9" name="Machine learning scoreboard">
         <extensionElements>
             <properties xmlns="http://www.ibm.com/spec/ODM/dmn.xsd">
                 <property name="ads.designer.bkKind"><![CDATA[prediction]]></property>
             </properties>
         </extensionElements>
-        <variable name="Prediction 9" typeRef="java.lang.String"/>
-        <encapsulatedLogic typeRef="java.lang.String">
+        <variable name="Machine learning scoreboard" typeRef="Scoreboard"/>
+        <encapsulatedLogic typeRef="Scoreboard">
+            <formalParameter name="industry" typeRef="Industry"/>
+            <formalParameter name="clientInformation" typeRef="ClientInformation"/>
             <context>
                 <contextEntry>
                     <variable name="class"/>
                     <literalExpression>
-                        <text>""</text>
+                        <text>"y9dx18706.clientonboardinglab.client_onboarding_lab.machinelearningscoreboard.Machine_learning_scoreboard"</text>
                     </literalExpression>
                 </contextEntry>
                 <contextEntry>
                     <variable name="method signature"/>
                     <literalExpression>
-                        <text>""</text>
+                        <text>"run(Industry,ClientInformation)"</text>
                     </literalExpression>
                 </contextEntry>
             </context>

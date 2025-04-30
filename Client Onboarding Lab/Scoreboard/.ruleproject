@@ -9,6 +9,7 @@
   </paths>
   <paths xsi:type="ilog.rules.studio.model.bom:BOMPath" pathID="BOM">
     <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="decisions.ads_jam_lab.client_onboarding:data#LATEST-SNAPSHOT" packageId="decisions.ads_jam_lab.client_onboarding:data" version="LATEST-SNAPSHOT"/>
+    <entries xsi:type="ilog.rules.studio.model.bom:DecisionLibraryBOMEntry" name="y9dx18706.clientonboardinglab.client_onboarding_lab:machineLearningScoreboard#LATEST-SNAPSHOT" packageId="y9dx18706.clientonboardinglab.client_onboarding_lab:machineLearningScoreboard" version="LATEST-SNAPSHOT"/>
   </paths>
   <modelFolders xsi:type="ilog.rules.studio.model.base:SourceFolder">
     <name>rules</name>

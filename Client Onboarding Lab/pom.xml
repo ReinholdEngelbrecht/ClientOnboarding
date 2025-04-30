@@ -65,7 +65,6 @@
     </dependencyManagement>
     <modules>
         <module>.decisionservice</module>
-        <module>1</module>
         <module>Data</module>
         <module>Fee and services</module>
         <module>MLDemo</module>
