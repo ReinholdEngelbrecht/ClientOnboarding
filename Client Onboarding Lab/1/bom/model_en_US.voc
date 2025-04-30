@@ -1,0 +1,25 @@
+
+# y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error#concept.label = Output error
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error.Error(java.lang.String,java.lang.String)#phrase.navigation = a new {Output error} where {0, code} {1, message} 
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error.code#phrase.action = set the code of {this} to {code}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error.code#phrase.navigation = {code} of {this}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error.message#phrase.action = set the message of {this} to {message}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error.message#phrase.navigation = {message} of {this}
+
+# y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input#concept.label = ML model input
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input.Input(java.lang.String)#phrase.navigation = a new {ML model input} where {0, input} 
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input.input#phrase.action = set the input of {this} to {input}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input.input#phrase.navigation = {input} of {this}
+
+# y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output#concept.label = ML model output
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.Output(java.lang.String,y9dx18706.clientonboardinglab.client_onboarding_lab._1.Error)#phrase.navigation = a new {ML model output} where {0, output} {1, error} 
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.error#phrase.action = set the error of {this} to {error}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.error#phrase.clearer = clear the error of {this}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.error#phrase.navigation = {error} of {this}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.inError()#phrase.navigation = {this} is in error
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.output#phrase.action = set the output of {this} to {output}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.output#phrase.navigation = {output} of {this}
+y9dx18706.clientonboardinglab.client_onboarding_lab._1.Output.run(y9dx18706.clientonboardinglab.client_onboarding_lab._1.Input)#phrase.navigation = predict({0})

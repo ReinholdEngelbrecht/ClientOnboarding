@@ -1,0 +1,82 @@
+
+package y9dx18706.clientonboardinglab.client_onboarding_lab.mldemo;
+
+
+class Error
+        property ads.typeId "2"
+        #de.generated
+{
+    string code
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "code"
+                #update;
+    string message
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "message"
+                #update;
+    Error(string code, string message)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Error()
+                #dataio.default;
+}
+
+class Input
+        property ads.typeId "1"
+        property com.fasterxml.jackson.annotation.JsonPropertyOrder "{input}"
+        #de.generated
+{
+    string input
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "input"
+                #update;
+    Input(string input)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Input()
+                #dataio.default;
+}
+
+class Output
+        property ads.typeId "3"
+        property com.fasterxml.jackson.annotation.JsonIgnoreProperties {
+            ignoreUnknown "true"
+        }
+        #de.generated
+{
+    y9dx18706.clientonboardinglab.client_onboarding_lab.mldemo.Error error
+                property ads.attributeId "2"
+                property com.fasterxml.jackson.annotation.JsonProperty "error"
+                #update;
+    string output
+                property ads.attributeId "1"
+                property com.fasterxml.jackson.annotation.JsonProperty "output"
+                #update;
+    Output(string output, y9dx18706.clientonboardinglab.client_onboarding_lab.mldemo.Error error)
+                #autoExpand
+                #beanConstructor
+                property groups "BALA"
+                #prototype;
+    Output()
+                #dataio.default;
+    boolean inError()
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.InErrorTestGenerator",
+                    $target "BOM"
+                }
+                #pureFunction;
+    static Output run(y9dx18706.clientonboardinglab.client_onboarding_lab.mldemo.Input input)
+                #pureFunction;
+    static Output run(com.ibm.decision.run.RunContext runContext, y9dx18706.clientonboardinglab.client_onboarding_lab.mldemo.Input input)
+                property de.generated {
+                    $gen "com.ibm.decision.ml.integration.xom.PredictionRunGenerator",
+                    $target "BOM",
+                    providerInfoId "05eca076-806d-44b5-b5d9-b6af3b6042f5"
+                }
+                #pureFunction;
+}
+
