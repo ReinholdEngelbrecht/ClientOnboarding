@@ -42,6 +42,11 @@
             <version>LATEST-SNAPSHOT</version>
         </dependency>
         <dependency>
+            <groupId>y9dx18706.clientonboardinglab.client_onboarding_lab</groupId>
+            <artifactId>taskModelExample</artifactId>
+            <version>LATEST-SNAPSHOT</version>
+        </dependency>
+        <dependency>
             <groupId>com.ibm.decision</groupId>
             <artifactId>engine-compact-runtime</artifactId>
             <version>${engine-compact-runtime.version}</version>
@@ -96,6 +101,8 @@
             </build>
         </profile>
     </profiles>
+
+
 
 
 
@@ -189,6 +196,15 @@
                                 <artifactItem>
                                     <groupId>decisions.client_onboarding.client_onboarding_decisions</groupId>
                                     <artifactId>servicesSubset</artifactId>
+                                    <version>LATEST-SNAPSHOT</version>
+                                    <type>jar</type>
+                                    <overWrite>false</overWrite>
+                                    <includes>**/*.class</includes>
+                                    <outputDirectory>${project.build.directory}/classes</outputDirectory>
+                                </artifactItem>
+                                <artifactItem>
+                                    <groupId>y9dx18706.clientonboardinglab.client_onboarding_lab</groupId>
+                                    <artifactId>taskModelExample</artifactId>
                                     <version>LATEST-SNAPSHOT</version>
                                     <type>jar</type>
                                     <overWrite>false</overWrite>
